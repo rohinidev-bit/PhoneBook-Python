@@ -12,34 +12,6 @@ cur.execute("create table if not exists email(contact_id integer, email_type var
 
 img=PhotoImage(file=r'\\192.168.4.11\181b171\PhoneBook\book.gif')
 Label(root, image=img).grid(row=0, column=1)
-##Functions
-
-##def add_phone():
-##    bp.grid_forget()
-##    o=v1.get()
-##    if(o==1):
-##        inn='Home'
-##    elif(o==2):
-##        inn='Office'
-##    elif(o==3):
-##        inn='Mobile'
-##    p=Entry(root)
-##    p.grid(row=11, column=3)
-##    p1=p.get()
-##    cur.execute("insert into phone (contact_type, phone) values(?,?)", (inn, p1))
-##    bp2=Button(root, text="+", command=add_phone_1).grid(row=11, column=4)
-##
-##def add_email():
-##    be.grid_forget()
-##    o2=v2.get()
-##    if(o2==4):
-##        inn2='Personal'
-##    elif(o2==5):
-##        inn2='Office'
-##    e=Entry(root)
-##    e.grid(row=13, column=3)
-##    e1=e.get()
-##    cur.execute("insert into email (email_type, email_id) values(?,?)", (inn2,e1))
 
 def save():
     try:
